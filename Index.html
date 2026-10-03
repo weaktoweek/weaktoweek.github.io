@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Weak to Week Support</title>
+<style>*,*::before,*::after{box-sizing:border-box} body{margin:0}</style>
+<style>
+/* Layout: one readable column; contact card up top, then plain-language answers */
+:root {
+  --bg: #f3f2ef; --card: #ffffff; --ink: #23211d; --muted: #665f55; --line: #e2ded6; --brand: #1f7a4a; --brand-soft: #e3f0e8;
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Figtree", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #161615; --card: #22211f; --ink: #f2eee6; --muted: #a8a093; --line: #34322e; --brand: #5fd08e; --brand-soft: #1d2e24; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #161615; --card: #22211f; --ink: #f2eee6; --muted: #a8a093; --line: #34322e; --brand: #5fd08e; --brand-soft: #1d2e24; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.6; }
+main { max-width: 680px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 64px; display: grid; gap: 28px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brand); }
+h1 { font-family: var(--serif); font-weight: 800; font-size: 2.2rem; line-height: 1.15; margin: 0; text-wrap: balance; }
+.date { color: var(--muted); margin: 0; }
+.summary { background: var(--brand-soft); border-radius: 16px; padding: 20px 22px; display: grid; gap: 8px; }
+.summary h2 { margin: 0; font-size: 1.05rem; }
+.summary ul { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+section { display: grid; gap: 8px; }
+h2 { font-family: var(--serif); font-weight: 800; font-size: 1.3rem; margin: 0; }
+p { margin: 0; }
+ul { margin: 0; padding-left: 1.2em; }
+.contact { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 22px; }
+.contact strong { user-select: all; }
+footer { color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 16px; }
+details { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; }
+details[open] { padding-bottom: 18px; }
+summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--brand); font-weight: 700; }
+details[open] summary::after { content: "–"; }
+details p, details ul { margin-top: 10px; color: var(--ink); }
+summary:focus-visible { outline: 2px solid var(--brand); outline-offset: 4px; border-radius: 6px; }
+.faq { display: grid; gap: 10px; }
+.path { font-weight: 600; }
+a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Weak to Week Budgeting</span>
+    <h1>Support</h1>
+    <p class="date">Help with the Weak to Week app for iPhone and iPad.</p>
+  </header>
+
+  <div class="summary">
+    <h2>Need a hand?</h2>
+    <p>Email <strong>weaktoweek@gmail.com</strong>. Tell us what you tapped, what you expected and what happened instead. Include your device (like iPhone 15 or iPad Air) and a screenshot if you can.</p>
+  </div>
+
+  <section>
+    <h2>What Weak to Week does</h2>
+    <p>Weak to Week turns your paycheck into a simple weekly spending number. It shows how much you have left this week after bills, keeps track of bills as you pay them, and shows your debt payoff dates. The goal is to stop living paycheck to paycheck and start living week to week, with room to spare.</p>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details id="q-saved">
+        <summary>Where is my budget saved?</summary>
+        <p>Only on your iPhone or iPad. There's no account and nothing is sent to us. See the <a href="privacy.html">privacy policy</a> for details.</p>
+      </details>
+      <details id="q-sample">
+        <summary>Who is John Smith?</summary>
+        <p>John is a made-up sample budget, so you can look around before entering your own numbers. When you're ready, tap <span class="path">Start my own</span> on Home, or go to <span class="path">More › Settings › Your budget › Start my own budget</span>. Everything is unlocked while John's sample is loaded so you can try every page.</p>
+      </details>
+      <details id="q-backup">
+        <summary>How do I back up or restore my budget?</summary>
+        <p>Go to <span class="path">More › Settings › Your data › Save a full backup</span>. It makes one file with everything in it. Save it to Files or send it to yourself.</p>
+        <p>To bring a backup back, go to <span class="path">More › Settings › Your data › Restore from a backup</span> and pick the file. It replaces what's in the app now.</p>
+      </details>
+      <details id="q-newphone">
+        <summary>I got a new phone. How do I keep my budget?</summary>
+        <p>Set up the new phone from an iCloud or computer backup of your old one, and your budget comes along with the app. Make sure your old phone has a recent backup first.</p>
+        <p>You can also save a full backup on the old phone, send it to yourself, and use <span class="path">Restore from a backup</span> on the new one.</p>
+      </details>
+      <details id="q-plus">
+        <summary>What do I get with Plus?</summary>
+        <p>Plus is a one-time purchase, not a subscription. It unlocks:</p>
+        <ul>
+          <li>Every Dollar, What If, Forecast, Tax refund, Charts, Habits and Ask</li>
+          <li>As many bills and debts as you need (free holds 10 bills and 1 debt)</li>
+          <li>Export to a spreadsheet</li>
+        </ul>
+        <p>All looks and themes are free for everyone.</p>
+      </details>
+      <details id="q-restore">
+        <summary>I bought Plus but it's locked again.</summary>
+        <p>Go to <span class="path">More › Settings › Weak to Week Plus</span> and tap <span class="path">Restore purchase</span>. Make sure you're signed in to the same Apple Account you bought it with. This also works on a new phone or on your iPad.</p>
+      </details>
+      <details id="q-refund">
+        <summary>How do I get a refund?</summary>
+        <p>Apple handles all App Store payments, so refunds go through Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, find Weak to Week and choose <span class="path">Request a refund</span>.</p>
+      </details>
+      <details id="q-startover">
+        <summary>How do I clear my spending or start over?</summary>
+        <p>In <span class="path">More › Settings › Your data</span> you can clear all spending and keep your bills, debts and settings. In <span class="path">Your budget</span> you can start a new budget from scratch. Neither one can be undone, so save a backup first.</p>
+      </details>
+      <details id="q-wrong">
+        <summary>A number looks wrong.</summary>
+        <p>Check your paycheck amount, next payday and bank balance in <span class="path">More › Settings › Money coming in</span> first. Most surprises come from one of those. If it still looks off, email us with a screenshot of the page.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>Weak to Week Budgeting · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
